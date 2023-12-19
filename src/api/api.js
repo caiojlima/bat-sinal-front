@@ -1,12 +1,12 @@
 export const getMessages = async () => {
-    return fetch('http://localhost:3001/message',{
+    return fetch('https://rich-puce-bull-kilt.cyclic.app/message',{
         method: 'GET'
     }).then((data) => data.json())
 }
 
 export const sendMessage = async (user, message) => {
     console.log(`Dentro da api: ${{user, message}}`);
-    return fetch('http://localhost:3001/message',{
+    return fetch('https://rich-puce-bull-kilt.cyclic.app/message',{
         method: 'POST',
         headers: {
             'Accept': 'application/json',
