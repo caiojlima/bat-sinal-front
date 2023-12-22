@@ -54,6 +54,8 @@
   padding: 1vh;
   max-width: 1024px;
   overflow: scroll;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .message {
@@ -62,7 +64,7 @@
   align-items: self-start;
   flex-direction: column;
   text-align: left;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.795);
   width: fit-content;
   height: fit-content;
   max-width: 45%;
@@ -70,14 +72,16 @@
   border-radius: 5px;
   margin-left: 3vh;
   margin-top: 1vh;
+  color: rgb(53, 53, 53);
+  font-weight:lighter;
 }
 
 .user-message {
   display: flex;
   justify-content: right;
   flex-direction: column;
-  text-align: right;
-  background-color: rgb(214, 214, 214);
+  text-align: left;
+  background-color: rgba(233, 231, 152, 0.692);
   width: fit-content;
   height: fit-content;
   max-width: 45%;
@@ -85,6 +89,8 @@
   margin-right: 3vh;
   margin-top: 1vh;
   border-radius: 5px;
+  color: rgba(255, 255, 255, 0.781);
+  font-weight:lighter;
 }
 
 .user{
@@ -106,29 +112,40 @@
 
 .input-div {
   width: 90%;
-  height: 3%;
+  height: 8%;
   max-width: 1024px;
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(56, 56, 56);
-  padding: 1vh;
+  align-items: center;
+  padding-left: 1vh;
+  padding-right: 1vh;
 
 }
 
 .input-div input{
   width: 88%;
-  border-radius: 20px;
   border: none;
   padding-left: 2%;
+  height: 75%;
+  background-color: #fcfcfc42;
+  color: white
+}
+
+.input-div input::placeholder {
+  color: rgba(255, 255, 255, 0.445);
 }
 
 .input-div button{
-  width: 6%;
-  height: 100%;
+  width: 6.7%;
+  height: 45%;
   font-size: 1.5vh;
-  border-radius: 50%;
   font-weight: bold;
   border: none;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  border: solid rgba(230, 255, 3, 0.349);
+  border-width: 0 3px 3px 0;
+  background-color: #61dafb00;
 }
 
 .container {

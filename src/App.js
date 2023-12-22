@@ -27,8 +27,8 @@ function App() {
   }
 
   const updateState = (user, message) => {
-    console.log({user, message});
-    sendMessage(user, message)
+    if (message) sendMessage(user, message)
+    
     setState([...state, { user, message: input.message }])
     setInput({...input, message: ''})
   }
@@ -54,7 +54,7 @@ function App() {
         </div>
         <div className='input-div'>
               <input type='text' placeholder='Digite sua mensagem...' name='message' onChange={handleChange} value={input.message}></input>
-              <button onClick={() => { updateState(user, input.message) }}>{'>'}</button>
+              <button onClick={() => { updateState(user, input.message) }}></button>
         </div>
       </div>) : (
           <div class="container">
@@ -71,7 +71,7 @@ function App() {
               <button className='register'>Register here...</button>
             </div>
             <div className='login-btn-container'>
-              <button type="submit" onClick={() => { setUser(input.uname); setLogin(false) }}>Login</button>
+              <button type="submit" onClick={() => { setUser(input.user); setLogin(false) }}>Login</button>
             </div>
           </div>
         </div>
