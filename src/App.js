@@ -63,9 +63,9 @@ function App() {
           </div>
           <div className='form-container'>
             <div className='inputs-container'>
-              <input type="text" placeholder="USER" name="uname" onChange={handleChange} value={input.uname}></input>
-              <input type="text" placeholder="PASSWORD" name="uname" onChange={handleChange} value={input.uname}></input>
-              <input type="text" placeholder="SECRET KEY" name="uname" onChange={handleChange} value={input.uname}></input>
+              <input type="text" placeholder="USER" name="user" onChange={handleChange} value={input.user}></input>
+              <input type="password" placeholder="PASSWORD" name="pass" onChange={handleChange} value={input.pass}></input>
+              <input type="text" placeholder="SECRET KEY" name="key" onChange={handleChange} value={input.key}></input>
             </div>
             <div className='register-container'>
               <button className='register'>Register here...</button>

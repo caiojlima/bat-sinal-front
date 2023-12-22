@@ -170,10 +170,11 @@
   border: none;
   border-bottom: solid rgba(255, 255, 255, 0.541) 1px;
   background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.678);
+  padding-left: 2%;
 }
 
 .inputs-container input::placeholder {
-  padding-left: 2%;
   color: rgba(255, 255, 255, 0.678);
 }
 
