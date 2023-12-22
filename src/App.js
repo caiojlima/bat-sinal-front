@@ -28,7 +28,8 @@ function App() {
 
   const updateState = (user, message) => {
     if (message) sendMessage(user, message)
-
+    
+    setState([{ user, message: input.message }, ...state])
     setInput({...input, message: ''})
   }
 
