@@ -58,11 +58,22 @@ function App() {
         </div>
       </div>) : (
           <div class="container">
-          <label for="uname"><b>Nome de usuário:</b></label>
-          <input type="text" placeholder="Escreve nome de usuário" name="uname" onChange={handleChange} value={input.uname}></input>
-          <button type="submit" onClick={() => { setUser(input.uname); setLogin(false) }}>Login</button>
-          <label>
-          </label>
+          <div className='title-container'>
+            <h2>LOGIN</h2>
+          </div>
+          <div className='form-container'>
+            <div className='inputs-container'>
+              <input type="text" placeholder="USER" name="uname" onChange={handleChange} value={input.uname}></input>
+              <input type="text" placeholder="PASSWORD" name="uname" onChange={handleChange} value={input.uname}></input>
+              <input type="text" placeholder="SECRET KEY" name="uname" onChange={handleChange} value={input.uname}></input>
+            </div>
+            <div className='register-container'>
+              <button className='register'>Register here...</button>
+            </div>
+            <div className='login-btn-container'>
+              <button type="submit" onClick={() => { setUser(input.uname); setLogin(false) }}>Login</button>
+            </div>
+          </div>
         </div>
       )}
       
